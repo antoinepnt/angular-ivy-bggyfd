@@ -1,0 +1,30 @@
+<h1> {{title}} </h1>
+
+<div> 
+  <input type="text" placeholder="search by name"/>
+  <input type="number" placeholder="search by ID"/>
+
+  <select>
+    // voir vrai site
+    <option> Select a type </option>
+    <option> grass </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+    <option> Select a type </option>
+  </select>
+</div>
+
+<div *ngFor="let pokemon of list">
+  <img src={{ pokemon.img }} alt={{pokemon.name}}/>
